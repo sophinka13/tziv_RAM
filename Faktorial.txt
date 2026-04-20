@@ -1,0 +1,23 @@
+read 1
+load 1
+jzero zero
+load =1
+store 2
+loop:
+	load 2
+	mul 1
+	store 2
+
+	load 1
+	sub =1
+	store 1
+
+	JGTZ loop
+
+write 2
+halt
+
+zero: 
+	load =1
+	write 0
+	halt
