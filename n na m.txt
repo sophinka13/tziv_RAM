@@ -1,0 +1,22 @@
+
+read 1
+#inicializacia
+load =1
+store 2
+read 3
+
+loop:
+
+load 2
+mul 3
+store 2
+
+load 1
+sub =1
+store 1
+
+jgtz loop
+
+write 2
+
+	
