@@ -1,0 +1,75 @@
+read 1
+
+loop: 
+	load 1
+	div =8
+	store 2
+	mul =8
+	sub 1
+	mul =-1
+	store 3
+reg_check: 
+load 15
+JZERO c5
+load 14
+JZERO c4
+load 13
+JZERO c3
+load 12
+JZERO c2
+load 11
+JZERO c1
+
+
+c5:
+load 3
+store 15
+JUMP minus_one
+
+c4:
+load 3
+store 14
+JUMP minus_one
+
+c3:
+load 3
+store 13
+JUMP minus_one
+
+c2:
+load 3
+store 12
+JUMP minus_one
+
+c1:
+load 3
+store 11
+JUMP minus_one
+
+minus_one:
+load 2
+JZERO konec
+store 1
+JUMP loop
+
+konec: 
+load 15
+store 10
+load 14
+mul =10
+add 10
+store 10
+load 13
+mul =100
+add 10
+store 10
+load 12
+mul =1000
+add 10
+store 10
+load 11
+mul =10000
+add 10
+store 10
+
+
