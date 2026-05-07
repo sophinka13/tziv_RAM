@@ -1,5 +1,5 @@
 read 1
-load =15
+load =20
 store 5
 load 1
 store 9
@@ -20,33 +20,45 @@ store *5
 load 5
 sub =1
 store 5
-JUMP minus_one
-
-
-
-minus_one:
 load 2
 JZERO konec
 store 1
 JUMP loop
 
+
 konec:
-load 15
+load 20
 store 10
-load 14
+load 19
 mul =10
 add 10
 store 10
-load 13
+load 18
 mul =100
 add 10
 store 10
-load 12
+load 17
 mul =1000
 add 10
 store 10
-load 11
+load 16
 mul =10000
+add 10
+store 10
+load 15
+mul =100000
+add 10
+store 10
+load 14
+mul =1000000
+add 10
+store 10
+load 13
+mul =10000000
+add 10
+store 10
+load 12
+mul =100000000
 add 10
 store 10
 load 9
