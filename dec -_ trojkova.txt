@@ -11,10 +11,6 @@ loop:
 	sub 1
 	mul =-1
 	store 3
-	jump c5
-
-
-c5:
 load 3
 store *5
 load 5
